@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LeftPanel from '../../component/LeftPanel/LeftPanel';
 import RightPanel from '../../component/RightPanel/RightPanel';
 import { Companies } from '../../types/interface';
+import companyData from './company.json';
 import './Dashboard.scss';
 
 
@@ -16,7 +17,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     //Call companies
-    setCompanies([{id: 1, name: 'company1', numWarehouses: 3}, {id: 2, name: 'company2', numWarehouses: 5}]);
+    setCompanies(companyData);
   }, []);
 
   return (

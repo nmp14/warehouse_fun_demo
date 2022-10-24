@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "name": "company1",
+    "numWarehouses": 3,
+    "warehouses": [
+      {
+        "id": 1,
+        "name": "Warehouse 1",
+        "numItems": 1000,
+        "capacity": 5000
+      },
+      {
+        "id": 2,
+        "name": "Warehouse 2",
+        "numItems": 100,
+        "capacity": 5250
+      },
+      {
+        "id": 3,
+        "name": "Warehouse 3",
+        "numItems": 560,
+        "capacity": 1000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "company2",
+    "numWarehouses": 5,
+    "warehouses": [
+      {
+        "id": 4,
+        "name": "Warehouse 123",
+        "numItems": 1000,
+        "capacity": 5000
+      },
+      {
+        "id": 5,
+        "name": "Warehouse 223",
+        "numItems": 100,
+        "capacity": 5250
+      },
+      {
+        "id": 6,
+        "name": "Warehouse 323",
+        "numItems": 560,
+        "capacity": 1000
+      },
+      {
+        "id": 7,
+        "name": "Warehouse 2123",
+        "numItems": 100,
+        "capacity": 5250
+      },
+      {
+        "id": 8,
+        "name": "Warehouse 3123",
+        "numItems": 560,
+        "capacity": 1000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "company3",
+    "numWarehouses": 3,
+    "warehouses": [
+      {
+        "id": 9,
+        "name": "Warehouse a",
+        "numItems": 15,
+        "capacity": 40
+      },
+      {
+        "id": 10,
+        "name": "Warehouse b",
+        "numItems": 100,
+        "capacity": 600
+      },
+      {
+        "id": 11,
+        "name": "Warehouse c",
+        "numItems": 5600,
+        "capacity": 10000
+      }
+    ]
+  }
+]

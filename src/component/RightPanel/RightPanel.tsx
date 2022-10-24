@@ -25,7 +25,18 @@ const RightPanel = (props: RightPanelProps) => {
       {company ? (
         <>
           <h2>{capitlizeCompanyName(company.name)}</h2>
-          <div>{company.numWarehouses} Warehouses Managed</div>
+          <div style={{marginBottom: '30px', borderBottom: '1px solid #000', paddingBottom: '6px'}}>
+            {company.numWarehouses} Warehouses Managed
+          </div>
+
+          {/* Too lazy to make a table for now so just slapping warehouse name ugly like */}
+          <div className='warehouses'>
+            {company.warehouses?.map(warehouse => (
+              <div style={{textAlign: 'center'}}>
+                {warehouse.name}
+              </div>
+            ))}
+          </div>
         </>
       ) : (
         <h2>You have not selected a company yet!</h2>
