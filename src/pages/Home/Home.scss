@@ -1,0 +1,57 @@
+.homepage {
+  width: 100%;
+  height: calc(100vh);
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(teal 0%, 35%, blue 90%), 
+    linear-gradient(to right, teal 0%, 40%, purple 90%),
+    url("https://raw.githubusercontent.com/nmp14ST/Warehouse-management-ST/main/public/images/warehouse.jpeg");
+  background-blend-mode: screen, difference, lighten;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 0;
+  z-index: 1;
+
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .slide-in {
+      animation: slide-right 1.5s linear;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    a {
+      color: lightblue;
+      display: block;
+      margin-top: 6px;
+    }
+  }
+}
+
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-150%) scale(3);
+    filter: blur(6px);
+    visibility: hidden;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+    visibility: visible;
+  }
+}

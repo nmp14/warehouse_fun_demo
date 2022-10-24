@@ -1,0 +1,11 @@
+.dashboard-container {
+  .right-panel {
+    width: 75%;
+    height: 100vh;
+    color: #555;
+  }
+
+  .right-panel.closed-panel {
+    width: 100%;
+  }
+}
