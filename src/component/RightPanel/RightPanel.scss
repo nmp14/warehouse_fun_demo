@@ -2,10 +2,20 @@
   .right-panel {
     width: 75%;
     height: 100vh;
-    color: #555;
+    background: #fefefe;
   }
 
   .right-panel.closed-panel {
     width: 100%;
+  }
+
+  .right-panel > h2 {
+    margin: 24px 0;
+    font-size: 24px;
+  }
+
+  .right-panel > h2,
+  .right-panel > div {
+    text-align: center;
   }
 }

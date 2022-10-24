@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <div className='dashboard-container'>
       {showPanel && <LeftPanel companyList={companies} setActiveCompany={setActiveCompany}/>}
-      <div className='panel-btn' onClick={() => handlePanelBtnClick()}></div>
+      <div className={`panel-btn ${showPanel ? '' : 'closed-panel'}`} onClick={() => handlePanelBtnClick()}></div>
       <RightPanel company={activeCompany} showPanel={showPanel}/>
     </div>
   );

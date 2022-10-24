@@ -13,12 +13,22 @@ const RightPanel = (props: RightPanelProps) => {
     showPanel,
   } = props;
 
+  const capitlizeCompanyName = (companyName: string): string => {
+    const firstLetter = companyName?.[0];
+    const rest = companyName?.substring(1);
+
+    return firstLetter?.toUpperCase() + rest;
+  }
+
   return (
-    <div className='right-panel'>
+    <div className={`right-panel ${showPanel ? '' : 'closed-panel'}`}>
       {company ? (
-        <div>#{company.numWarehouses} Warehouses</div>
+        <>
+          <h2>{capitlizeCompanyName(company.name)}</h2>
+          <div>{company.numWarehouses} Warehouses Managed</div>
+        </>
       ) : (
-        <div className={showPanel ? '' : 'closed-panel'}>You have not selected a company yet!</div>
+        <h2>You have not selected a company yet!</h2>
       )}
     </div>
   );
